@@ -1,0 +1,14 @@
+
+.box {
+    background-color: olive;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+
+#secial {
+    background-color: orangered;
+    position: absolute;
+    /* aboslute is relatieve to the page itself */
+    
+}
