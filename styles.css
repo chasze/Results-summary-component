@@ -1,0 +1,168 @@
+/* colors
+
+#4735f3  card bg
+
+#462ada  circle bg
+
+#fff6f5  reaction
+#d28687  reaction text
+
+#fffbf2  memory
+#ead080 mem text
+
+
+#f1fbfa verbal
+#3eac91 verbal text
+
+
+#f3f3fb visual
+#4246ad visual text
+
+ continue button
+
+
+*/
+
+:root {
+    --card-bg: #4735f3;
+    --circle-bg: #462ada;
+   --btn-color: #2f3a58;
+    --reaction-bg: #fff6f5;
+    --reaction-text: #d28687;
+    --memory-bg: #fffbf2;
+    --memory-text: #ead080;
+    --verbal-bg: #f1fbfa;
+    --verbal-text: #3eac91;
+    --visual-bg: #f3f3fb;
+    --visual-text: #4246ad;
+
+
+
+
+
+}
+
+
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+  .container {
+    height: 100%;
+    margin: 0 20%;
+    padding: 0;
+    display: flex;
+    border: 3px solid green;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+  
+
+.result-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    border-radius: 5px;
+    margin: 0 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    position: relative;
+    z-index: 1;
+}
+.score h2 {
+    position: relative;
+    
+}
+
+.score-circle {
+    background-color: var(--circle-bg);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+    opacity: 80%;
+    top: 0px;
+    right: -30px;
+
+}
+
+
+.text-container {
+
+    color: white;
+    padding: 0 20%;
+}
+
+.summary-side{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    flex: 1;
+    margin: 0 16px;
+
+
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+    padding: 0 16px;
+    border-radius: 16px;
+}
+
+
+
+.reaction {
+    color: var(--reaction-text);
+    background-color: var(--reaction-bg);
+}
+
+.memory {
+    color: var(--memory-text);
+    background-color: var(--memory-bg);
+}
+
+.verbal {
+    color: var(--verbal-text);
+    background-color: var(--verbal-bg);
+}
+
+.visual {
+    color: var(--visual-text);
+    background-color: var(--visual-bg);
+}
+
+
+
+.continue {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background-color: var(--btn-color);
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
